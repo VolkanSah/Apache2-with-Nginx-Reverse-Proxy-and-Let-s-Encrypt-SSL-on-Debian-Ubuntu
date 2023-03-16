@@ -149,7 +149,7 @@ sudo nano /etc/nginx/sites-available/example.com
 In the server block for port 443, change the proxy_pass directive to use https:// and port 8443:
 
 ```bash
-proxy_pass https://YOUR_APACHE2_IP:8443;
+proxy_pass https://YOUR_APACHE2_IP:8080;
 ```
 Save and close the file.
 
