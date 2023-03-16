@@ -58,7 +58,6 @@ Enable Nginx to start at boot:
 sudo systemctl enable nginx
 ```
 Start the Nginx service:
-```
 ```bash
 sudo systemctl start nginx
 ```
