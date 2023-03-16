@@ -196,3 +196,15 @@ Enable the Apache2 SSL module:
 ```bash
 sudo a2enmod ssl
 ```
+Restart the Apache2 and Nginx services to apply the changes:
+```bash
+sudo systemctl restart apache2
+sudo systemctl restart nginx
+```
+### Testing the Setup
+
+- Open a web browser and visit your domain (e.g., https://example.com). You should see the default Apache2 web page served via Nginx with a secure HTTPS connection.
+
+- Verify that the SSL certificate is correctly installed by checking the padlock icon in your browser's address bar. Click on the padlock to see the certificate details and confirm that it was issued by Let's Encrypt.
+
+- That's it! You have successfully set up Apache2 with Nginx as a reverse proxy and secured your site with Let's Encrypt SSL certificates on Debian or Ubuntu. You can now deploy your web applications and enjoy the benefits of this configuration.
